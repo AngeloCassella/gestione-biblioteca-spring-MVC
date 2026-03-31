@@ -68,5 +68,10 @@ public class BookController {
     return "redirect:/books";
     }
 
+    @PostMapping("/save/categoryone")
+    public String saveCategoryOne(@RequestParam long book, @RequestParam long category) {
+        return "redirect:/home";
+    }
+
 
 }
